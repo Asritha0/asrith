@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="form_validation.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact Us</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Courses Offered
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">C</a>
+            <a href="#">C++</a>
+            <a href="#">Java</a>
+            <a href="#">Python</a>
+            <a href="#">javascript</a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h1 class="text-align">COURSE REGISTRATION</h1>
+      </div>
+      <div class="tab-container">
+        <table>
+          <tr>
+            <th>Course</th>
+            <th>Price</th>
+            <th>Duration</th>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td>Rs.1000</td>
+            <td>3 Months</td>
+          </tr>
+          <tr>
+            <td>C++</td>
+            <td>Rs.1000</td>
+            <td>3 Months</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>Rs.1000</td>
+            <td>3 Months</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>Rs.1000</td>
+            <td>3 Months</td>
+          </tr>
+          <tr>
+            <td>javascript</td>
+            <td>Rs.1000</td>
+            <td>3 Months</td>
+          </tr>
+        </table>
+      </div>
+
+      <form action="./thank_you.html">
+        <ul class="form-style-1">
+          <li>
+            <label>Full Name <span class="required">*</span></label
+            ><input
+              type="text"
+              name="field1"
+              class="field-divided"
+              placeholder="First"
+            />
+            <input
+              type="text"
+              name="field2"
+              class="field-divided"
+              placeholder="Last"
+            />
+          </li>
+          <li>
+            <label>Email <span class="required">*</span></label>
+            <input type="email" name="field3" class="field-long" />
+          </li>
+          <li>
+            <label>Gender</label>
+            <select name="field8" class="field-select">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </li>
+          <li>
+            <label>Course</label>
+            <select name="field4" class="field-select">
+              <option value="C">C</option>
+              <option value="C++">C++</option>
+              <option value="Java">Java</option>
+              <option value="python">Python</option>
+              <option value="script">javascript</option>
+            </select>
+          </li>
+
+          <li>
+            <label>Contact No <span class="required">*</span></label>
+            <input type="number" name="field6" class="field-long" />
+          </li>
+          <li>
+            <label>Address<span class="required">*</span></label>
+            <input type="text" name="field7" class="field-long" />
+          </li>
+          <li>
+            <input type="submit" value="Submit" />
+          </li>
+        </ul>
+      </form>
+    </div>
+  </body>
+</html>
